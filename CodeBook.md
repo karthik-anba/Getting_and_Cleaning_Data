@@ -14,7 +14,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 The reasoning behind my selection of features is that the assignment explicitly states "Extracts only the measurements on the mean and standard deviation for each measurement." To be complete, I included all variables having to do with mean or standard deviation.
 
-In short, for this derived dataset, these signals were used to estimate variables of the feature vector for each pattern:
+In short, for this derived dataset, these signals were used to estimate variables of the feature vector for each pattern: 
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
     tBodyAcc-XYZ
