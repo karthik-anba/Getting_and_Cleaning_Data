@@ -1,5 +1,6 @@
-## Loading the dataset ##
-
+------------------------
+##Loading the dataset##
+------------------------
 x_train <- read.table(file.choose(), sep = "")
 y_train <- read.table(file.choose(), sep = "")
 subject_train <- read.table(file.choose(), sep = "")
