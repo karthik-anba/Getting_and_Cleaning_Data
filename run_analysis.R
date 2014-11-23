@@ -47,13 +47,13 @@ data_with_activity$Subject <- as.factor(data_with_activity$Subject)
 
 #5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-tidy_data = aggregate(mean_std_data, by=list(Activity = mean_std_data$ActivityId , Subject=mean_std_data$Subject), mean)
-
-
+tidy_data = aggregate(data_with_activity, by=list(Activity = data_with_activity$Activity , Subject=data_with_activity$Subject), mean)
+tidy_data=tidy_data[,-3]
+tidy_data=tidy_data[,-83]
+tidy_data=tidy_data[,-82]
 
 --------------------------
   ## Write to txt file ##
 --------------------------
 
-write.table(tidy_data, "tidy_data.txt", sep="\t", row.name=FALSE)
-getwd()
+write.table(tidy_data, "tidy.txt", sep="\t", row.name=FALSE)
